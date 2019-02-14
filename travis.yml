@@ -7,3 +7,4 @@ before_install:
 
 script:
   - docker run yilengyao/docker-react npm run test -- --coverage
+  
