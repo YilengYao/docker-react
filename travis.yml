@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t yilengyao/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run yilengyao/docker-react npm run test -- --coverage
